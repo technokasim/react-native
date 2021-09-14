@@ -1,0 +1,26 @@
+import React,{useState} from 'react'
+
+import {View,Text,Stylesheet,Button} from 'react-native'
+
+
+function App(){
+  const [name, setName] = useState("mukesh")
+  // let name = "mokesh"
+  return(
+    <View>
+        {
+          name ? <Text>{name}</Text>:<Text>nosd name </Text>
+        }
+        <Button
+        title ="change name"
+        color="blueviolet"
+        onPress={()=>{
+          setName("")
+        }}
+        />
+    </View>
+  )
+}
+
+
+export default App
