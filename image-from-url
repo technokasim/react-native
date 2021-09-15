@@ -1,0 +1,21 @@
+import React,{useState} from 'react'
+
+import {View,Text,Stylesheet,Image} from 'react-native'
+import Constants from 'expo-constants'
+
+
+function App(){
+  const [name, setName] = useState("mukesh")
+  // let name = "mokesh"
+  return(
+    <View style={{paddingTop:Constants.statusBarHeight}}>
+       <Text>Image</Text>
+
+       <Image source={ruri = "https://images.unsplash.com/photo-1631691971564-adf9419d904e?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"} style={{height:200,width:200}}/>
+
+    </View>
+  )
+}
+
+
+export default App
