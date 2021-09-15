@@ -1,0 +1,21 @@
+import React,{useState} from 'react'
+
+import {View,Text,Stylesheet,Image} from 'react-native'
+import Constants from 'expo-constants'
+
+
+function App(){
+  const [name, setName] = useState("mukesh")
+  // let name = "mokesh"
+  return(
+    <View style={{paddingTop:Constants.statusBarHeight}}>
+       <Text>Image</Text>
+
+       <Image source={require('./assets/snack-icon.png')} style={{height:200,width:200}}/>
+
+    </View>
+  )
+}
+
+
+export default App
